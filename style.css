@@ -1,0 +1,367 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7faf6;
+    color: #26372b;
+    line-height: 1.7;
+}
+
+
+/* Navigation Bar */
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px #00000010;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #267347;
+    font-size: 23px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #26372b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #29965b;
+}
+
+
+/* Hero Section */
+.hero {
+    min-height: 570px;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #e1f3e4, #f7faf6);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.tagline,
+.section-label {
+    color: #27834d;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.15;
+    color: #164b30;
+    margin-bottom: 22px;
+}
+
+.hero-content > p:not(.tagline) {
+    max-width: 620px;
+    margin-bottom: 28px;
+    color: #4f6254;
+    font-size: 18px;
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #267347;
+    color: white;
+    text-decoration: none;
+    padding: 12px 23px;
+    border-radius: 7px;
+    margin: 5px 8px 5px 0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #174b2e;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #267347;
+    border: 2px solid #267347;
+}
+
+.btn-outline:hover {
+    color: white;
+}
+
+
+/* General Sections */
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 6%;
+}
+
+.section h2 {
+    font-size: 36px;
+    color: #194c30;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 950px;
+    color: #56665a;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+/* Problem Section */
+.problem-section {
+    max-width: 100%;
+    background-color: #edf5ec;
+}
+
+.problem-section > p,
+.problem-section > h2,
+.problem-section .card-container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #163c2010;
+    border: 1px solid #e4eee4;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px #163c2020;
+}
+
+.icon {
+    display: inline-block;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    color: #267347;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #5b695e;
+    font-size: 15px;
+}
+
+
+/* Goals Section */
+.goals-section {
+    background-color: #e2f1e3;
+}
+
+.goals-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.goals-list p {
+    background-color: white;
+    padding: 16px 20px;
+    border-radius: 8px;
+    color: #345b3e;
+}
+
+
+/* Survey Section */
+.survey-section {
+    text-align: center;
+}
+
+.survey-section .intro {
+    margin: 0 auto 30px;
+}
+
+.survey-box {
+    max-width: 750px;
+    margin: 35px auto 0;
+    padding: 40px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #e2f4e4, #f5faf1);
+    border: 1px solid #cce4ce;
+}
+
+.survey-box h3 {
+    color: #194c30;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.survey-box p {
+    color: #56665a;
+    margin-bottom: 20px;
+}
+
+.survey-box .small-text {
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+
+/* Final Message */
+.final-message {
+    text-align: center;
+    padding: 70px 8%;
+    background-color: #194c30;
+    color: white;
+}
+
+.final-message h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.final-message p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    color: #e0eee2;
+}
+
+.final-message .btn {
+    background-color: white;
+    color: #194c30;
+}
+
+.final-message .btn:hover {
+    background-color: #e1f3e4;
+}
+
+
+/* Footer */
+footer {
+    background-color: #102f1e;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    color: #b8e4c1;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #d3e0d5;
+}
+
+.copyright {
+    margin-top: 15px;
+}
+
+
+/* Mobile Responsive Design */
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 80px 7%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-content > p:not(.tagline) {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .section h2 {
+        font-size: 29px;
+    }
+
+    .card-container,
+    .goals-list {
+        grid-template-columns: 1fr;
+    }
+
+    .survey-box {
+        padding: 25px 18px;
+    }
+
+    .final-message h2 {
+        font-size: 26px;
+    }
+}
